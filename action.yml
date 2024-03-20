@@ -1,0 +1,13 @@
+name: "GraphQL schema transform"
+description: "Normalizes federation subgraph schemas to be valid GraphQL schemas"
+author: "MiSArch contributers"
+inputs:
+    schema:
+        description: "The GraphQL schema file to transform"
+        required: true
+    target:
+        description: "The target for the transformed file"
+        required: true
+runs:
+    using: node20
+    main: dist/index.js
